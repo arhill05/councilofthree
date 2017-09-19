@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Cabin|Roboto");
 html,
 body,
 ul,
@@ -9,20 +9,28 @@ ol {
 body,
 p,
 div {
-  font-size: 20px;
-  font-family: "Tenor Sans", sans-serif; }
+  font-size: 18px;
+  font-family: "Cabin", sans-serif; }
 
 body {
-  background-color: #F6F8FF; }
+  color: #333;
+  background-color: #E9E9E9; }
 
 h1,
 h2,
 h3 {
-  font-family: "Archivo Black", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  color: #288d86;
+  margin-top: 0;
+  padding-top: 0; }
+
+h2 {
+  font-size: 1.8em; }
 
 .landing {
   height: 100vh;
-  background-color: #F6F8FF;
+  background-color: #E9E9E9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,13 +39,14 @@ h3 {
     border-radius: 50%;
     max-width: 60%;
     max-height: 60%;
-    display: block; }
+    display: block;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.5); }
   .landing i {
     display: block;
     font-size: 36px;
-    background: black;
-    border: 4px solid black;
-    color: white;
+    background: #556270;
+    border: 4px solid #556270;
+    color: #E9E9E9;
     position: absolute;
     bottom: 6vh;
     border-radius: 50%;
@@ -55,25 +64,27 @@ h3 {
 .gradient {
   width: 100%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
-  background: linear-gradient(45deg, #000, #434343);
+  background: linear-gradient(45deg, #4ecdc4, #556270);
   padding: 32px 0; }
+  .gradient.reverse {
+    background: linear-gradient(-45deg, #4ecdc4, #556270); }
   .gradient:not(:first-of-type) {
     box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.4); }
   .gradient h1,
   .gradient h2,
   .gradient h3 {
-    color: #F6F8FF; }
+    color: #E9E9E9; }
 
 .container {
   width: 75%;
   margin: 0 auto; }
 
 .col-1 {
-  color: #F6F8FF;
+  color: #E9E9E9;
   grid-area: col-1; }
 
 .col-2 {
-  color: #F6F8FF;
+  color: #E9E9E9;
   grid-area: col-2; }
 
 .team {
@@ -88,6 +99,7 @@ h3 {
   .team .portfolio {
     text-align: center; }
     .team .portfolio img {
+      margin-bottom: 16px;
       max-width: 50%;
       border-radius: 50%;
       box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5); }
@@ -98,7 +110,7 @@ h3 {
   grid-template-rows: 32px 2fr;
   grid-gap: 64px;
   padding: 0 0 6vh 0;
-  color: #F6F8FF; }
+  color: #E9E9E9; }
   .projects h2 {
     grid-area: header;
     text-align: center; }
@@ -108,7 +120,7 @@ h3 {
     text-align: center; }
     .projects .project img {
       margin: 16px 0 64px 0;
-      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
       border-radius: 4px; }
   .projects .project-1 {
     grid-area: project-1; }
@@ -125,8 +137,8 @@ h3 {
 .footer {
   display: flex;
   align-items: center;
-  color: #F6F8FF;
-  background-color: black;
+  color: #E9E9E9;
+  background-color: #3f4953;
   font-size: 16px;
   width: 100%; }
   .footer p {
