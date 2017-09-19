@@ -128,6 +128,7 @@ h2 {
     grid-area: project-2; }
 
 .contact {
+  margin: 6vh 0;
   text-align: center; }
   .contact ul {
     list-style: none; }
